@@ -69,3 +69,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # crwn-clothing-store
+<br> ![FireShot 1Capture 014 - React App - clinquant-kleicha-0a7991 netlify app](https://user-images.githubusercontent.com/61974319/193158966-f1f4c81d-bcb7-45c9-9228-0a1191ee0a66.png)
+<br>![FireShot2 Capture 015 - React App - clinquant-kleicha-0a7991 netlify app](https://user-images.githubusercontent.com/61974319/193159038-007ecbdc-674d-4b1d-b4c0-87e772e2c53f.png)
+<br>![FireShot 3Capture 016 - React App - clinquant-kleicha-0a7991 netlify app](https://user-images.githubusercontent.com/61974319/193159243-42802813-6282-429b-bba9-82e99ff814a5.png)
+<br>![FireShot4 Capture 017 - React App - clinquant-kleicha-0a7991 netlify app](https://user-images.githubusercontent.com/61974319/193159285-99a24ade-f765-4904-8e7d-21a69a7ae875.png)
+
+
+
