@@ -1,0 +1,5 @@
+write debugger in vsc in your js file 
+you can add multiple debugger
+Debugger is going to trigger the debugging tools in our browser
+and this is supported by all major browsers
+pause our program at a specific point in time to analayze our variables at that point time 

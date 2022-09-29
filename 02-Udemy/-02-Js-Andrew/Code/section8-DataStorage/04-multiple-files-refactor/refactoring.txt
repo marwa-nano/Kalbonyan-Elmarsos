@@ -1,0 +1,4 @@
+refactoring is the process of restructuring your code without changing its external behaviour 
+notes
+-----
+1- when working with multiple javascript files ,pay attention to the order of which you load them 
