@@ -1,0 +1,1 @@
+(()=>{"use strict";var o;console.log("index.js"),console.log(33),console.log("marwa"),console.log(`${"Marwa Mohamed".toUpperCase()} !`),console.log((o=10)*o)})();
