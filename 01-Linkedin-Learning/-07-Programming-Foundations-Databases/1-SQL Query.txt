@@ -1,0 +1,25 @@
+Aquery returns specific information that we ask for.
+use Select statement tells the database we want to see information from specific fields
+*   wildcard character indicates all possible values in order to ask the database to give me information from all the fields
+
+SELECT * FROM Customers;
+SELECT * FROM Dishes;
+SELECT Name FROM Dishes;
+SELECT FirstName, LastName, Email FROM Customers;
+
+
+we can use the WHERE clause to choose only specific records or records which match our criteria.
+   
+SELECT FirstName, LastName, State FROM Customers WHERE State ="CA";
+SELECT FirstName, LastName, State FROM Customers WHERE State="CA" OR State="co";
+SELECT FirstName, LastName, State FROM Customers WHERE State LIKE "C%";
+SELECT FirstName, LastName, State FROM Customers WHERE FirstName="Taylor";
+SELECT CustomerID, FirstName, LastName, State FROM Customers WHERE FirstName="Taylor";
+SELECT FROM Reservations;
+SELECT FROM Reservations WHERE`'Date' >  "2019-02-06" AND 'Date' < "2019-02-07";
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+1-Before we define tables,we need to create a database,in SQL
+
+CREATE DATABASE Restaurant;
+ 
+2- tell system  to use our newly created database.
+ 
+USE Restaurant;
+
+3-create tables in DB
+
+CREATE TABLE Customers(
+CustomerID INT(6) NOT NULL AUTO_INCREMENT,
+FirstName  VARCHAR(200) NOT NULL,
+LastName VARCHAR(200) NOT NULL,
+Email VARCHAR(200),
+Address VARCHAR(200),
+City VARCHAR(200),
+State CHAR(2),
+Phone VARCHAR(20) NOT NULL,
+Birthday DATE,
+FavoriteDish INT(5) REFERENCES Dishes(DishID),
+PRIMARY KEY(CustomerID)
+);
+
+table was created.

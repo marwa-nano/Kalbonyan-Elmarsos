@@ -1,0 +1,45 @@
+SQL  to modify data,retrieving data or reading it is the R in the CRUD acronym.
+Create,Read,update,and delete.
+
+create or insert new record
+INSERT INTO Customers(FirstName,LastName,Email,Phone)
+VALUES("Jane","Smith","jsmith2019@landonhotel.com","415-555-1234");
+
+SELECT * FROM Customers;
+------------------------------------------
+
+update record
+
+first select target data we wnt to change 
+SELECT * FROM Customers WHERE FirstName="Taylor"AND LastName="Jenkins";
+
+to target column we want
+SELECT * FROM Customers WHERE Customer ID=1;
+
+UPDATE Customers SET Email="tjenkins@landonhotel.com" WHERE Customer ID=1;
+
+to see the change what we mae
+SELECT * FROM Customers WHERE CustomerID=1;
+----------------------------------------------------
+Delete record
+
+SELECT*FROM Customers WHERE FirstName="Taylor";
+
+DELETE FROM customers WHERE CustomerID=26;
+
+SELECT * FROM Customers;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                 

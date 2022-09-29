@@ -1,0 +1,24 @@
+sorting by order by clause
+
+here we sorted by name  
+SELECT * FROM Dishes ORDER BY `Name';
+  
+by default with Ascending order,It's represented by ASC 
+SELECT * FROM Dishes ORDER BY `Name` ASC;
+
+and Ican invert the sort to descending by changing that to DESC.
+SELECT * FROM Dishes ORDER BY `Name` DESC;
+
+sorting work with any data types hass logical order
+SELECT * FROM Dishes ORDER BY Price;
+SELECT * FROM Reservations ORDER BY 'Date';
+
+SELECT * FROM Reservations
+WHERE 'Date' > "2019-02-06" AND `Date` < "2019-02-07"
+ORDER BY 'Date';
+
+
+
+
+
+

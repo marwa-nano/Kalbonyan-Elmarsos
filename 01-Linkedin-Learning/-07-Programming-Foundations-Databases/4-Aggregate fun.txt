@@ -1,0 +1,33 @@
+1-count fn which returns the number of records in a particular field from rows that matchaparticular condition.
+SELECT COUNT(FirstName) FROM Customers;
+
+COUNT(FirstName)
+           100
+-------------------------------------------------------
+SELECT COUNT(FirstName) FROM Customers WHERE State="CA";
+
+COUNT(FirstName)
+           16
+----------------------------------------------------------
+2-sum fn adds up all the values of the matching criteria,
+SELECT SUM(Price) FROM Dishes;
+
+SUM(Price)
+   176.93
+---------------------------------------------------------------
+3-avg fn get an average of values
+SELECT SUM(Price), AVG(Price) FROM Dishes;
+
+SUM(Price)  AVG(Price)
+   176.93       8.042273
+---------------------------------------------------------------
+
+4-Min ,Max fn to get min,max values
+SELECT SUM(Price), AVG(Price), MIN(Price), MAX(Price) FROM Dishes;
+
+SUM(Price)      AVG(Price)         MIN(Price)       MAX(Price)
+   176.93          8.042273             4.00                 9.99
+
+----------------------------------------------------------------------------------------
+
+

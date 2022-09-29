@@ -1,0 +1,38 @@
+SELECT FirstName, LastName, FavoriteDish FROM Customers;
+
+SELECT FirstName, LastName, FavoriteDish FROM Customers
+JOIN Dishes;
+
+SELECT FirstName, LastName,  FavoriteDish FROM Customers
+JOIN Dishes ON Customers.FavoriteDish = Dishes.DishID;
+
+SELECT FirstName, LastName, FavoriteDish, Dishes.'Name' FROM Customers
+JOIN Dishes ON Customers.FavoriteDish=Dishes.DishID;
+
+SELECT FirstName, LastName, FavoriteDish, Dishes.DishID, Dishes.Name FROM Customers
+JOIN Dishes ON Customers.FavoriteDish=Dishes.DishID;
+
+SELECT FirstName,LastName,Dishes.Name FROM Customers 
+JOIN Dishes ON Customers.FavoriteDish = Dishes.DishID;
+
+
+SELECT  * FROM Reservations;
+
+SELECT FirstName, LastName, Reservations.`Date`, Reservations.PartySize
+FROM Customers
+JOIN Reservations ON Reservations.CustomerID = Customers.CustomerID
+ORDER BY Reservations. 'Date';
+
+SELECT OrdersDishes.OrderID, Orders.OrderDate, Customers.FirstName,
+Customers.LastName, Customers.Phone, GROUP_CONCAT(Dishes.`Name` SEPARATOR',')AS Items,
+COUNT(OrdersDishes.DishID)AS Qty,
+SUM(Dishes.Price)AS Total
+FROM OrdersDishes
+JOIN Dishes ON OrdersDishes.DishID=Dishes.DishID
+JOIN Orders ON Orders.OrderID=OrdersDishes.OrderID
+JOIN Customers ON Orders.Customer ID=Customers.CustomerID
+GROUP BY(Orders.OrderID);
+
+OrderID Order Date FirstName LastName Phone Items Qty Total
+                                                                                                
+                               
