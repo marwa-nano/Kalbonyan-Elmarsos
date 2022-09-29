@@ -1,0 +1,40 @@
+1-
+install new program in your machine allows us to server up a folder as a website
+==> view our files in the browser
+
+install webserver program  called ==> live server
+--------------------------------------------------
+2-
+node =>npm  installed automatically with node 
+npm ==> allows us to install other pecies of s/w like live server 
+
+to know if npm installed correctly on your device:
+---------------------------------------------------
+command ==> npm -v  ==>npm version installed on your machine and its version is ....
+
+how to install live server:
+-----------------------------
+command ==> npm install -g live-server       installing
+
+to know if live-server installed correctly on your device:
+----------------------------------------------------------
+live-server --version  ==>live-server version............
+
+-------------------------------------------------------------------------------
+3-
+to run html file (index.html) from cmder by using live server
+
+cd folder that contain folder you want to serve up 
+
+live-server foldername 
+
+---------------------------------------------------------------------------------
+4-
+to shutdown live-server
+
+ctrl + c
+---------------------------------------------------------------------------------
+
+
+
+

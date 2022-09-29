@@ -1,0 +1,7 @@
+1- create html file
+2-create h1 tag and 5 p elements
+3- run the server  serve that folder and view the document in the browser
+
+--------------------
+1-create and link javascript file to the html file
+2-remove all p tag that have 'the' in the text 
