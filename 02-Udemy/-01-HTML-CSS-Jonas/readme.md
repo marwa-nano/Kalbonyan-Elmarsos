@@ -19,7 +19,7 @@
 ---
 [Course-Link](https://www.udemy.com/course/design-and-develop-a-killer-website-with-html5-and-css3)<br>
 
-![Certificate](https://user-images.githubusercontent.com/61974319/193133930-0e059837-cf77-400a-8be1-b5634dc203e1.png)
+![Certificate](https://user-images.githubusercontent.com/61974319/193133930-0e059837-cf77-400a-8be1-b5634dc203e1.png)<br>
 
 <br> ![FireShot Capture 005 - Udemy Course Completion Certificate - Udemy - www udemy com](https://user-images.githubusercontent.com/61974319/193133930-0e059837-cf77-400a-8be1-b5634dc203e1.png)
 
