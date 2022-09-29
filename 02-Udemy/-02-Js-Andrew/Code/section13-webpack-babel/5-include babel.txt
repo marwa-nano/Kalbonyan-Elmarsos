@@ -1,0 +1,10 @@
+//We switched from running Babul as a standalone command to including Babul as part of Web Pack that required us to specify a new module rule.This rule targets all JavaScript files that are not inside of node modules.It runs it through Babul using Balbo Loader and we still configure it with the same options in this case using the env preset to make sure that our code works and as wide a range of environments as possible.
+
+// include babel support with webpack to get both of these advantages to get this we use webpack loader allows us to customize what happens when webpack loads a file with its modules system so we install babel loader and configure it
+// npm install babel-loader@7.1.4
+// then add module:{} as above
+
+// then  change theses in package.json
+//"webpack": "webpack",
+//"build": "babel src/index.js --out-file public/scripts/bundle.js --presets env --watch"
+

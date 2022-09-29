@@ -1,0 +1,27 @@
+the goal is to create JavaScript applications that actually work in all
+
+browsers but still use cutting edge features to get that done.
+
+We're going to be using a tool and that tool is called Babel. take our JavaScript code and convert it to something that all browsers understand.
+
+So if we use a fancy cutting edge feature when we're writing our script, Babel is going to convert
+
+that to a  feature that all browsers understand, and that's what's actually going to run behind
+
+the scenes.
+
+This still allows us to work with and write code using the cutting edge features, but our application
+
+will work pretty much everywhere.
+
+https://babeljs.io/   -->Babel is a JavaScript compiler.
+Babble takes code.We write with the latest features and it compiles it down into more simple code that older browsers
+can understand.
+
+to be able to perform this conversion process with files locally on our machine, we're going to have to
+
+install Babul as a command line tool.So we install it like we installed live server earlier in the course.
+-g falg to install globally
+we used NPM install -g babel-cli
+cli --> CLI, which stands for the Babul command line interface.
+run test command babel --version -->print the version of Babille currently installed.

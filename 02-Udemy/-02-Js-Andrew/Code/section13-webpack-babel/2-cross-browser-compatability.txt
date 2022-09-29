@@ -1,0 +1,31 @@
+
+much older browsers that don't support the newer features or taking advantage of in this modern JavaScript
+
+boot camp.
+
+They're probably just going to think the application is broken.
+
+They're probably not going to assume that it has something to do with the browser they're using.
+
+So this browser incompatibility for a feature is going to be a big problem for us.
+
+If we want to write modern JavaScript code and have our applications work everywhere, we are going
+
+to need to introduce a bit of tooling.
+
+The tooling that we're going to introduce is going to solve those two key problems.
+
+The first problem, older browsers are never going to update to support these newer features.
+
+So if we want to use them, which we do, we have to figure out a way to work around that which we're
+
+going to.
+
+The second problem is that there are newer JavaScript features out there that currently aren't supported
+
+by any browser, even the latest and greatest.
+
+So the tooling that we're going to set up is going to solve that problem to allowing us to use the most
+
+advanced cutting edge features in the language.
+

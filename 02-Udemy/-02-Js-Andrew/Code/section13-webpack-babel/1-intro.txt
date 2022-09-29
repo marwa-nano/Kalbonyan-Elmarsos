@@ -1,0 +1,17 @@
+we focusing on two tools.
+
+The first is Babel and the second is Web pack.
+
+The first tool babel that's going to make sure that our application runs in a wider range of browsers
+
+as possible, even really old browsers that are no longer being updated to support the latest new JavaScript
+
+features.
+
+The second tool we're going to use Web pack is also going to give us access to a lot of new stuff.
+
+The most exciting thing is the JavaScript module system that gives us a whole new way to structure and
+
+architect our apps.
+
+

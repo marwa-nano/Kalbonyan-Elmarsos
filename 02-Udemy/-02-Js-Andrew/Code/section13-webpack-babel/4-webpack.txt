@@ -1,0 +1,64 @@
+1-Index.Js, which contains the code that we actually write and edit in visual
+
+studio code.
+
+We then pass that code through Babel, which converts the modern JavaScript into JavaScript that can
+
+be executed from pretty much anywhere, and Babel spits out a file.
+
+This is the file that actually runs in the browser. bundle.js
+
+webpack can make babel and more things enable modules
+
+modules system change our project structure 
+
+webpack able to reduce the number of script tags, making our application
+
+faster.also be able to reduce the weird ordering in order to share code between our files with
+
+the new import export system.
+
+webpack.js.org
+install webpack 
+npm install webpack@4.5.0 webpack-cli 
+
+we create this file webpack.config.js in root folder for your project
+module.exports specific to node js 
+Module exports is specific to node. this is how we can expose something from a given file.
+And in this case we are exposing the configuration object right here inside of the object.
+We can now start providing the configuration details for our purposes.
+
+To get the basic configuration in place.
+
+We have to specify the input and the output.
+
+The input, also known as the entry for WABAC is going to get defined first.
+
+So right here, we're going to set up our first property on this object entry and we're going to set
+
+entry equal to a string.
+
+This string is a relative path to the place where our code lives.WABAC now knows where to find the code to process.
+
+The only thing we have to still specify is where to save the processed code.
+
+We can now add a second property onto our configuration object.
+
+This one is called output and output actually doesn't get set equal to a string.
+
+It gets set equal to an object since there are a lot of different things we can configure about.
+
+The output for our purposes, we are going to configure just one, the path and path get set equal to
+
+a string.
+
+It contains the path to where we want to save the web back output.
+
+ absolute path
+__dirname this provides the absolute path to the root of your project.
+we need to load node libarary first This library gives us a whole bunch of utility methods for working with paths.
+
+We can combine two paths in a universal way to get this.require("path")
+npm run webpack 
+create new file main.js in scripts we can provide the file in in webpack.config.js 
+
