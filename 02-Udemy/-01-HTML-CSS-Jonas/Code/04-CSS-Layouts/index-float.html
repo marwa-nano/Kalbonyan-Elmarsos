@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Basic Language of the Web: HTML</title>
+    <link href="style-float.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- hierarchy of heading element
+    <h1>The Basic Language of the Web: HTML</h1>
+    <h2>The Basic Language of the Web: HTML</h2>
+    <h3>The Basic Language of the Web: HTML</h3>
+    <h4>The Basic Language of the Web: HTML</h4>
+    <h5>The Basic Language of the Web: HTML</h5>
+    <h6>The Basic Language of the Web: HTML</h6>-->
+      <header class="main-header clearfix">
+        <h1>📘 The Code Magazine</h1>
+        <nav>
+          <!--<p>this is for test inheritance</p>-->
+          <a href="blog.html">Blog</a>
+          <a href="#">Challenges</a>
+          <a href="flexbox.html">Flexbox</a>
+          <a href="css-grid.html">Css Grid</a>
+          <!--<a>test a without link</a>-->
+        </nav>
+        <!--<div class="clear"></div>-->
+      </header>
+      <article>
+        <header class="post-header">
+          <h2>The Basic Language of the Web: HTML</h2>
+          <img
+            src="img/laura-jones.jpg"
+            alt="author laura-jones"
+            width="50"
+            height="50"
+            class="author-img"
+          />
+          <p id="author" class="author">
+            Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
+          </p>
+          <img
+            src="img/post-img.jpg"
+            alt="Html codeon a screen"
+            width="500"
+            height="200"
+            class="post-img"
+          />
+        </header>
+        <p>
+          All modern websites and web applications are built using three
+          <em>fundamental</em>
+          technologies: HTML, CSS and JavaScript. These are the languages of the
+          web.
+        </p>
+        <p>
+          In this post, let's focus on HTML. We will learn what HTML is all
+          about, and why you too should learn it.
+        </p>
+        <h3>What is HTML?</h3>
+        <p>
+          HTML stands for
+          <strong>H</strong
+          >yper<strong>T</strong>ext<strong>M</strong>arkup<strong>L</strong>anguage.
+          It's a markup language that web developers use to structure and
+          describe the content of a webpage (not a programming language).
+        </p>
+        <p>
+          HTML consists of elements that describe different types of content:
+          paragraphs, links, headings, images, video, etc. Web browsers
+          understand HTML and render HTML code as websites.
+        </p>
+        <p>In HTML, each element is made up of 3 parts:</p>
+        <ol>
+          <li class="first-li">The opening tag</li>
+          <li>The closing tag</li>
+          <li>The closing tag</li>
+        </ol>
+        <p>
+          You can learn more at the
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+            target="_blank"
+            >MDN Web Docs</a
+          >.
+        </p>
+        <h3>Why should you learn HTML?</h3>
+        <p>
+          There are countless reasons for learning the fundamental language of
+          the web. Here are 5 of them:
+        </p>
+        <ul>
+          <li class="first-li">
+            To be able to use the fundamental web dev language
+          </li>
+          <li>
+            To hand-craft beautiful websites instead of relying on tools like
+            Worpress or Wix
+          </li>
+          <li>To build web applications</li>
+          <li>To impress friends</li>
+          <li>To have fun 😃</li>
+        </ul>
+        <!--<p>test</p>-->
+      </article>
+      <aside class="clearfix">
+        <h4>Related posts</h4>
+        <ul class="Related">
+          <li>
+            <img
+              src="img/related-1.jpg"
+              alt=" learn web development"
+              height="75"
+              width="75"
+            /><a href="#"> How to Learn Web Development</a>
+          </li>
+          <p class="related-author">By Jonas Schmedtmann</p>
+          <li>
+            <img
+              src="img/related-2.jpg"
+              alt="power of css"
+              height="75"
+              width="75"
+            /><a href="#"> The Unknown Powers of CSS</a>
+          </li>
+          <p class="related-author">By Jim Dillon</p>
+          <li>
+            <img
+              src="img/related-3.jpg"
+              alt="power of JavaScript"
+              height="75"
+              width="75"
+            /><a href="#"> Why JavaScript is Awesome</a>
+          </li>
+          <p class="related-author">By Matilda</p>
+        </ul>
+      </aside>
+      <footer>
+        <p id="copyright" class="copyright text">
+          Copyright &copy; 2027 by The Code Magazine.
+        </p>
+      </footer>
+    </div>
+    <button>❤Like</button>
+  </body>
+</html>

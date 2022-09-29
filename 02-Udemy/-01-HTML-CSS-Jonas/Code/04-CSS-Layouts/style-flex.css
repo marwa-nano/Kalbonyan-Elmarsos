@@ -1,0 +1,347 @@
+/*universal or global selector*/
+* {
+  /*border-top: 5px solid #1098ad;*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  color: #444;
+  border-top: 5px solid #1098ad;
+  position: relative;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.main-header {
+  background-color: #f7f7f7;
+  /*padding:20px;
+  padding-left: 40px;
+  padding-right: 40px;*/
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  /* height: 80px;*/
+}
+nav {
+  font-size: 18px;
+  /*text-align: center;*/
+}
+nav a:link {
+  /*background-color: orangered;
+  margin: 20px;
+  padding: 20px;
+  display: block;*/
+  margin-right: 30px;
+  /*margin-top: 10px;*/
+  display: inline-block;
+}
+nav a:link:last-child {
+  margin-right: 0;
+}
+button {
+  font-size: 20px;
+  padding: 20px;
+  cursor: pointer;
+  position: absolute;
+  /*top:0;
+  left:0*/
+  bottom: 0;
+  right: 50px;
+}
+.post-img {
+  width: 100%;
+  height: auto;
+}
+article {
+  margin-bottom: 60px;
+}
+.post-header {
+  margin-bottom: 40px;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  /*padding-top: 50px;
+  padding-bottom: 50px;*/
+  padding: 50px 40px;
+}
+
+/* all of them inherit from it's parent element body
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  font-family: sans-serif;
+  color: #444;
+}*/
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+h1 {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+h2 {
+  font-size: 35px;
+  margin-bottom: 30px;
+  position: relative;
+}
+h2::after {
+  content: "TOP";
+  background-color: #ffe70e;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10px;
+  right: -25px;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  /*display: inline;*/
+}
+p::first-line {
+  color: red;
+}
+h3 + p::first-line {
+  color: aqua;
+}
+ul,
+ol {
+  margin-left: 50px;
+  /*margin-bottom: 20px;*/
+}
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
+  /*display: inline;*/
+}
+li:last-child {
+  margin-bottom: 0;
+}
+/*article header p{
+  font-style: italic;
+}*/
+
+/* footer p {
+  font-style: italic;
+} */
+#copyright {
+  font-size: 16px;
+}
+
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+/* ul {
+  list-style: none;
+} */
+.related {
+  list-style: none;
+}
+
+/* .first-li {
+  font-weight: bold;
+} */
+
+li:first-child {
+  font-weight: bold;
+}
+li:last-child {
+  font-style: italic;
+}
+li:nth-child(2) {
+  color: #1098ad;
+}
+li:nth-child(even) {
+  color: #1098ad;
+}
+/* Misconception this is doesn't work
+ article p:first-child {
+  color: red;
+}
+this work because p is actually last child of article
+article p:last-child {
+  color: red;
+} */
+a {
+  color: aqua;
+}
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+a:visited {
+  color: #777;
+  color: #1098ad;
+}
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline dotted rgb(0, 255, 42);
+}
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+/*LVHA ANCHOR STATUS*/
+
+/*resolving conflicts
+here id selector applies because highest priority
+*/
+#copyright {
+  color: red;
+}
+.copyright {
+  color: aqua;
+}
+.text {
+  color: yellow;
+}
+footer p {
+  color: green;
+  /*color: green !important;*/
+}
+
+/*nav a:link,
+nav p {
+  font-size: 40px;
+}*/
+
+/*FLOATS*/
+/*
+.author-img {
+  float: left;
+  margin-bottom: 20px;
+}
+.author {
+  float: left;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+h1 {
+  float: left;
+}
+nav {
+  float: right;
+}
+/*.clear {
+  clear: both;
+}
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+article {
+  /*background-color: green;
+  width: 825px;
+  float: left;
+}
+aside {
+  /* background-color: red;
+  width: 300px;
+  float: right;
+}
+footer {
+  background-color: #ffe70e;
+  clear: both;
+}
+*/
+/*FLEXBOX*/
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.author-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 10px;
+}
+.author {
+  margin-bottom: 0;
+  /*margin-left: 15px;*/
+}
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.related-link:link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  /*margin-bottom: 5px;doesn't work=>inline element*/
+  display: block;
+  margin-bottom: 5px;
+}
+
+.related-author {
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+}
+.row {
+  display: flex;
+  gap: 75px;
+  margin-bottom: 60px;
+  align-items: flex-start;
+}
+article {
+  /*flex: 0 0 825px;*/
+  flex: 1;
+  margin-bottom: 0;
+}
+.aside {
+  /*DEFAULTS
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  flex-basis: 300px;
+  flex-shrink: 0;
+  */
+  flex: 0 0 300px;
+}
