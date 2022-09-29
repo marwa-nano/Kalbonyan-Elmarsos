@@ -17,4 +17,4 @@
 <br>[Course Link](https://www.linkedin.com/learning/programming-foundations-fundamentals-3/)
 <br>[Preview Certificate](https://www.linkedin.com/learning/certificates/89c33395ece35db518762ef76e085fdd7ed7895ccd7145859aa78518ce288b0d?trk=share_certificate)
 <br>(![2022-09-29-10-37-](https://user-images.githubusercontent.com/61974319/192983818-f8ca8e46-145c-4960-a9ea-669119e9a33f.png))
-<br>[course recap on notion](https://www.notion.so/01-Fundamentals-d96320bca9584f61950cb1336f650ce3)
+<br>[Course Recap on Notion](https://www.notion.so/01-Fundamentals-d96320bca9584f61950cb1336f650ce3)
