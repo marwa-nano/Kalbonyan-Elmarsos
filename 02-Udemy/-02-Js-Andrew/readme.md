@@ -3,13 +3,13 @@
 ## Projects
 ### Todo app
 - [Project-code](./Projects/Todo-app)
-- [Live Demo]()
+- [Live Demo](https://todo-apps-js-marwa.netlify.app/)
 ###  Notes app
 - [Project-code](./Projects/Notes-app)
-- [Live Demo]()
+- [Live Demo](https://notes-app-js-marwa.netlify.app/index.html)
 ### Hangman-Game
 - [Project-code](./Projects/Hangman-Game)
-- [Live Demo]()
+- [Live Demo](https://hangman-game-js-marwa.netlify.app/)
 
 ---
 ## Code
@@ -18,4 +18,6 @@
 ---
 [Course-Link](https://www.udemy.com/course/modern-javascript/)<br>
 
-![Certificate](https://via.placeholder.com/468x300?text=Certificate+Here)
+![Certificate](https://www.udemy.com/certificate/UC-493d4354-e644-4a80-988f-5327d3daf758)
+<br>![2022-09-30-00-01-](https://user-images.githubusercontent.com/61974319/193150037-447949d4-9970-4ce6-88d9-918888db4967.png)
+
