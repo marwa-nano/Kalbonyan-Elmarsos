@@ -1,0 +1,176 @@
+talk about servers,instances, and EC2.
+Alfredo's Pizza: they have waiters and waitresses taking your requests,and giving it to the chef working the brick oven in the back.
+And they return to you what the chef prepares:hot, delicious pizza. The waiters and waitresses are like servers in the cloud.
+They handle your request and they give you a response.
+Elastic Compute Cloud: the name says it all.EC2 allows you to rent and manage virtual servers in the cloud.
+You have elastic compute power. Elastic simply means that it can grow and shrink,like a rubber band or like pizza dough,
+based on the needs or the load on your application.And it's virtual servers in the cloud, meaning it's compute or processing power in the cloud.
+
+Let's look at the region first,Northern Virginia. It's a region that falls under the geographic location of US East.
+And remember, a single region contains multiple AZs,and a single AZ, or availability zone,contains multiple data centers.
+And remember, a data center contains multiple servers.
+
+at one of the data centers in availability zone C.This data center has multiple servers.
+servers are the actual physical compute hardware running in the data center.
+an EC2 instance is a virtual server running on that physical server.
+And this shows you that instances are not considered serverless because they actually exist on servers
+somewhere in a data center.EC2 is a foundational piece of AWS's Cloud Computing platform.
+
+1. you're able to provision an EC2 instance using the console at the click of a button.
+2. You can use a preconfigured template called an Amazon Machine Image,or an AMI, to launch your instance.
+Now, this template provides just the information required to launch your instance like the operating system.
+ 
+3. You can deploy your applications directly to your EC2 instances. 
+4. You receive 750 compute hours per month on the Free Tier plan.
+
+Let's discuss EC2 in the real world.When would you want to use an EC2 instance?
+Let's say you have a database.You can deploy a database to EC2.You'll have full control over that database.
+You can also stand up a web server and deploy a web application to an EC2 instance.And if you deploy to multiple AZs,
+that web application will be highly available.
+
+There are several common ways to access your EC2 instances.
+1-The first is through the AWS Management Console.You're able to configure and manage your instances through a web browser.
+2-Next, you can use SSH, Secure Shell,that allows you to establish a secure connection to your instance from your local laptop.
+3-Next, you can use EC2 Instance Connect. EIC With this, there is no need to install an SSH client, and you can use IAM policies
+to control access to your instances,removing the need to manage SSH keys.
+4-Another common way is AWS Systems Manager.Through its Session Manager, you're able to manage your EC2 instances
+through an interactive one-click, browser-based shell or through the AWS CLI.
+
+The most common way to connectto Linux EC2 instances is via SSH,and the first thing you'll do is generate a key pair.
+A key pair consists of a private key and a public key,and it basically proves your identity when you're trying to connect to
+or log into an EC2 instance. So once you have your key pair, you connect via SSH.You have an SSH client on your laptop
+that uses the private key,and when you connect to your EC2 instance,your EC2 instance uses the public key.
+
+here are several pricing options to choose from
+when using your EC2 instance,and it's really based on your use case and your budget.
+1-On-Demand.On-Demand: it's the typical way that people use it.It's a fixed price in which you are billed
+down to the second based on your instance type.There is no contract and you pay for only what you use.
+Some common use cases for On-Demand:it's when you care about low cost and you do not want to make an upfront payment
+or a long-term commitment.Or if you have applications that have unpredictable workloads that cannot be interrupted, consider an On-Demand instance.
+If you have an application that's under development,or your workloads will not run longer than a year,
+then an On-Demand instance works great for those.
+
+Fun facts about an On-Demand instance:
+-------------------------------------------
+you can actually reserve capacity using On-Demand Capacity Reservations.This capacity is held for you
+whether or not you run the instance, but sometimes it is good to know that that capacity is there whenever you need it.
+
+2-we have Spot instances. Spot instances let you take advantage of unused EC2 capacity across the AWS cloud.
+And your request is fulfilled only if the capacity is available.
+So, when do you want to use a Spot instance? You use it when you're not concerned about the start or stop time of your application,
+or if you have workloads that can be interrupted, or your application is only feasible at very low compute prices.
+
+And the fun facts for Spot:
+-------------------------------------
+you can save up to 90% off of On-Demand instances,so that makes Spot the cheapest option.And you pay the Spot price
+that's in effect at the beginning of each hour.
+
+3-we have Reserved Instances.
+You're basically making a reservation, like the name says,and it allows you to commit to a specific instance type
+in a certain region for 1 or 3 years.You use Reserved Instances when your application has steady state usage,
+and you can actually commit to a one- or three-year term. Reserved Instances also make a great use case
+for when you want to pay money upfront in order to receive a discount off On-Demand prices
+or your application requires a capacity reservation.
+
+Fun facts,
+------------
+you can save up to 75% off On-Demand prices.Now, with Reserved Instances, you are required to sign a contract for either 1 or 3 years,
+and you can reserve capacity in an availability zone for any duration. And you pay all upfront, partial upfront, or no upfront,
+and all upfront for the max term earns you the highest discount.
+One other neat thing about Reserved Instances: it provides what's called a convertible type at only 54% discount off of On-Demand prices.
+And you use a convertible Reserved Instance if you need additional flexibility. For example, you may want to change the instance family,
+or the operating system, or the tenancy model.And then, you're able to do that even though your instance is reserved.
+
+4-Dedicated Hosts. Now, this allows you to pay for a physical server that is fully dedicated to running your instances.
+That means no other AWS customer is going to have applications running on this server. The server basically belongs to you.
+You use Dedicated Hosts when you want to bring your own server-bound software licenses from vendors like Microsoft or Oracle,
+or if you have regulatory or corporate compliance requirements around the tenancy model.
+
+Some fun facts about Dedicated Hosts?
+-----------------------------------------
+You can save up to 70% off On-Demand prices,
+and you bring your existing per-socket,per-core, or per-VM software licenses.
+And like I mentioned, there is no multi-tenancy.That means the server is not shared with other customers.
+
+And don't confuse a Dedicated Host with a Dedicated Instance.
+**the Dedicated Host is the actual physical server,
+**whereas the Dedicated Instance runs on the host.
+
+5-we have Savings Plans. Savings Plans allow you to commit to compute usage that's measured per hour for 1 or 3 years.
+So, this is just the actual compute usage. And you use the Savings Plan when you want to lower your bill across multiple compute services,
+and you also want the flexibility to change compute services,or instance types, or operating systems, or regions.
+
+Now, a few fun facts about Savings Plans
+---------------------------------------------
+You can save up to 72% off On-Demand prices. And with this, you're not making a commitment
+to a dedicated host, just to compute usage. And your savings can be shared across various compute services
+like EC2, Fargate, and Lambda.
+Now, with Savings Plans, this does not provide a capacity reservation.
+
+Now let's talk about features.
+EC2 instances offer Load Balancing and Auto Scaling.
+
+1- What is Elastic Load Balancing?
+
+It's exactly what it sounds like.It balances the load or the requests and the traffic across a set of servers.
+Using Alfredo's Pizza, think of it like a greeter: someone standing at the door and directing a person to go to a certain line.
+Elastic load balancers act the same way,and there are several different types of load balancers.
+We have Classic Load Balancers, Application Load Balancers, Gateway Load Balancers, and Network Load Balancers,
+but they all act in the same manner.
+
+2-Auto Scaling.
+
+Auto Scaling adds or replaces EC2 instances across availability zones based on need and changing demand.
+So, think about it like this. Your system could go from 2 server instances to 3,
+or 3 down to 1 based on need.Auto Scaling is very important because it reduces the impact of system failures
+and approves the overall availability of your applications.
+You can also use Auto Scaling with other services like DynamoDB and Aurora.
+
+
+Now, there is this important note here.
+Do not confuse horizontal scaling with vertical scaling.
+Whenever you hear the term vertical scaling, think about upgrading, so you're scaling up.You're upgrading your EC2 instance
+by adding more CPU and RAM to an existing server,
+
+whereas horizontal scaling or scaling out is when you're adding or removing servers.
+
+
+Recap:
+-------
+We talked about an EC2 instance that allows you to rent and manage virtual servers in the cloud,and AWS's virtual servers are called instances.
+
+Connectivity: we looked at the multiple waysto log into your EC2 instance.And this is a list of the most common ways:
+the console, SSH, EC2 Instance Connect,and the AWS Systems Manager.
+
+We talked about the multiple pricing options and when you would want to use one pricing option over another.
+We looked at On-Demand, Spot, Reserved Instances, Dedicated Hosts, and Savings Plans.
+
+And features: we looked at Elastic Load Balancing.
+That's the greeter standing at the door directing traffic. It automatically distributes your incoming application traffic
+across multiple EC2 instances.
+And then we looked at EC2 Auto Scaling. That adds or replaces EC2 instances automatically
+across availability zones based on need.
+
+Going into the exam,
+there's a lot that you need to remember in this section.
+First, the EC2 pricing options.
+Make sure you understand On-Demand, Spot,
+Reserved Instances, Dedicated Hosts, and Savings Plans.
+Make sure you understand horizontal scaling
+versus vertical scaling.
+Horizontal scaling is called scaling out.
+That's where you add servers.
+And then, vertical scaling, think about scaling up.
+Think about upgrades. You're upgrading an existing instance.
+Also, know the types of load balancers:
+Classic, Application, Gateway, and Network.
+And don't forget the benefits of Auto Scaling.
+It improves the availability of your applications.
+And don't confuse Auto Scaling with Load Balancing
+when you're going into the exam.
+Make you understand the real-world usage of EC2 instances
+like deploying a database or a web application.
+And then, understand how to connect to an EC2 instance
+using SSH from your local machine,
+and you'll need a key pair in order to do that.
+

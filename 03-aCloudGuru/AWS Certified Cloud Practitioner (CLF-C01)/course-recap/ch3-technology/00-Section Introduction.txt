@@ -1,0 +1,25 @@
+This is the "Technology" section, where we'll be learning about the AWS services that you'll encounter on your Certified Cloud Practitioner exam.
+
+It will make up about 33% of the questions you'll encounter.
+Now, jumping into AWS for the first time, there are over 200 of them.Throughout this course,we'll be focusing on only the services
+that you may encounter on the Certified Cloud Practitioner exam.
+One of my favorite quotes from re:Invent 2021
+
+about how customers ask for services,AWS builds them, and then customers complain about how many services are available.
+it also shows us how we should think about services on AWS.
+We need to think about not only what the service does, but what is the business use case that drove that service into existence.
+So as you learn about these services, What does the service do and who is using the service?
+
+let's talk about the different categories
+of services that you may encounter.
+First, we're going to talk about compute services:How you can provision compute from AWS.
+Then there's storage and content delivery.
+There's networking,which tends to focus on how to connect your local environment to AWS.
+You'll learn about databases and the myriad ways you can provision databases on AWS.
+You'll learn about migration and transfer:How to get your services from on-premise into the AWS cloud.
+You'll also learn some analytics services: Services that help you make sense of your data.
+You'll learn about machine learning and developer tools.
+Finally, you'll learn about deployment and infrastructure management,
+messaging and integration,
+and then you'll learn about auditing,
+monitoring, and logging--services which you'll use to keep an eye on other services in your AWS accounts.

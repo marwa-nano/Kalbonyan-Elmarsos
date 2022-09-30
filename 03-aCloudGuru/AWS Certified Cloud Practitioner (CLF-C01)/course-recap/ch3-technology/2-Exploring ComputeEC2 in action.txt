@@ -1,0 +1,3 @@
+In this video, you'll see what the AWS platform looks like as well as learn how to navigate 
+
+through some of the systems on your own. Let's take a look at launching an EC2 instance.

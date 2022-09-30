@@ -1,0 +1,169 @@
+Let's talk about one
+of my favorite compute services: AWS Lambda.
+Lambda is a serverless compute service
+that lets you write code without managing servers.
+And believe me, for developers like myself,
+it's a dream come true.
+We can focus on our code
+and not worry about managing servers.
+The code you write's called a function,
+and you can author functions
+in many popular programming languages.
+Lambda scales automatically.
+And it's serverless.
+That means you don't have to worry
+about managing servers like with EC2.
+The bigger picture.
+Let's discuss how Lambda fits into the bigger picture
+and why it is a developer's dream come true.
+Developers build apps by writing code,
+and Lambda actually allows developers to focus
+on the core business logic for the apps they're developing
+instead of worrying about managing servers,
+doing things like patching, provisioning, and scaling.
+How would you use Lambda in the real world?
+Lambda is a building block for many serverless applications.
+Serverless simply means AWS manages the servers for you,
+and you cannot access them.
+You can pretend that they don't exist.
+There are several use cases for Lambda.
+The first could be for real-time file processing.
+Let's say you have a data file
+that you upload to an S3 bucket.
+And when that upload happens,
+it triggers a Lambda to read that file
+and store that data in a DynamoDB table.
+Another use case would be sending emails.
+Let's say you want to use Lambda
+and the Simple Notification Service
+to get very detailed file change notifications
+from CodeCommit.
+Here we have CodeCommit.
+Whenever there's a file change, it triggers CloudWatch,
+which then triggers a Lambda,
+which triggers SNS to send an email.
+Lambda is also used for the backend business logic.
+Whenever I develop Alexa Skills,
+the backend is typically a Lambda function
+that retrieves values from a database like DynamoDB
+and sends that information back to Alexa.
+Now, let's talk about features.
+The first feature
+is that it supports popular programming languages,
+like I mentioned before, languages like Java, Go,
+PowerShell, Node.js,
+C#, Python, and Ruby.
+So, there is a large footprint of languages
+supported by Lambda.
+And number 2, you can author your code
+using your favorite development environment
+locally and upload,
+or you can write the code via the console.
+Now, you're only responsible for the code you write,
+making sure it's secure,
+while AWS manages the coding environment
+and the supported language versions.
+For number 3, Lambda can execute your code
+in response to events.
+In the real-world example, we saw Lambda being triggered
+when a file is uploaded to S3.
+And number 4, Lambda functions have a 15-minute timeout.
+So, just remember that
+whenever you're designing your serverless architecture.
+Lambda is typically not good
+for processes that run longer than 15 minutes.
+Now, let's see Lambda in action.
+I've navigated to the AWS Management Console.
+You can get to the Lambda dashboard several ways.
+You can type Lambda here,
+and click on Lambda.
+This is the Lambda dashboard.
+It lists all of your functions.
+There are no functions, so we need to create a new one.
+Click on Create Function.
+We are going to select Author from Scratch.
+Start with a simple Hello World example.
+I'm going to give my function a name, myTestFunction.
+We'll leave the Runtime as Node.js
+and leave all of the other defaults
+and click Create Function.
+Now, we have this message:
+"Successfully created the function myTestFunction."
+And this is the dashboard for the function itself.
+There are several tabs here.
+We're most concerned about the code.
+So, we're going to write the code.
+Notice they give you a sample index.js file here
+with sample code that just simply says, "Hello from Lambda!"
+I am going to replace that with my sample code.
+And this code you can copy and paste.
+I've included a link in the Resources section
+so that you can pull up this code
+and just do a simple copy and paste.
+And all this code is doing is connecting to a URL.
+And if everything works,
+we'll see a response status code of 200.
+So, I've entered my code here.
+And in order to test it, you have to configure a test event.
+In this example, we'll just leave the default.
+We'll call it myTestEvent.
+I'm not actually passing anything to the function,
+but we'll leave the default as is and click Create.
+You have to create a test event in order to test a function.
+And now we've created the test event.
+We've authored the code.
+We have to click Deploy to deploy the changes.
+And now we can actually test it.
+Click on Test.
+And this window here shows the execution results.
+And notice the response is 200.
+So, it was actually able to access that URL.
+Here it shows the duration.
+Remember, that's one of the attributes
+that determines how much you pay for your code execution.
+Well, that was a quick look at creating a Lambda.
+Let's talk about the Lambda pricing model.
+You are charged based on the duration
+and the number of requests.
+Let's talk about the compute time.
+You pay only for the compute time used.
+So there's no charge if your code is not running.
+And the duration is calculated
+from the time your code begins
+until it returns or otherwise terminates.
+Next, you have the request count.
+A request is counted each time execution starts.
+Even if you're just testing it using the console,
+that will count as well.
+One neat thing about Lambda,
+it has what's called this always-free tier.
+So that means the free-usage tier
+includes 1 million free requests each month,
+and that's even after the free tier ends.
+So, Lambda is basically always free.
+It's review time.
+What did we learn?
+We learned about Lambda.
+Lambda is a serverless compute service
+that lets you run code without managing servers.
+And it has several features.
+It supports many popular programming languages,
+and you can author your code
+using your favorite development environment,
+or you can author it via the console.
+And we talked about pricing.
+Pricing is based on the compute time, request count,
+and then you have that always-free option.
+Going into the exam.
+When dealing with Lambda,
+remember what is your responsibility versus AWS's.
+For example, you are only responsible
+for your application code.
+AWS manages servers, the coding environment,
+and language support.
+And going into the exam,
+remember the pricing model for Lambda.
+Lambda has an always-free option
+that, even after the free-tier usage expires,
+you have access to 1 million free Lambda calls each month.
+When you're ready, please join me in the next lesson.
