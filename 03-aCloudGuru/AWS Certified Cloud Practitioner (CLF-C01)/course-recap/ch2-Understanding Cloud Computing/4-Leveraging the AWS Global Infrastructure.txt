@@ -1,0 +1,101 @@
+the AWS Global Infrastructure that's available to you.
+
+you'll learn about Regions, Availability Zones, and edge locations. Alfredo's Pizza is going global thanks to the AWS Global Infrastructure.
+
+**A Region:
+--------------
+is a physical location.For example, here in orange,we have the Northern Virginia Region and we have the Ohio Region.
+Now, these 2 Regions fall within the US East geographic location.
+
+AWS logically groups its Regions into larger geographical areas for ease of management.
+So we looked at the US East geographical location.There's also US West that has several Regions.South America, Africa, Europe, and Asia Pacific.
+
+Now, when deploying your applications,you want to select a Region that is closest to your users because it improves the user experience
+so they'll see faster downloads and response times.You just don't randomly select Regions when you start deploying your applications.
+So if all of your users lived in the Asia Pacific geographic location,then you would not pick Regions in South America
+to deploy your applications to.
+
+characteristics of Regions:
+
+1-Each Region is spread out fully independent isolated from other Regions.
+there's a flood or a tsunami or earthquake in one Region.The other Regions will not be impacted.
+And because of this,sometimes it makes sense to deploy your code to multiple Regions.
+
+2-Another characteristic is Regions are resource and service specific.So when you're in the AWS console,you'll see that you'll have to select a Region
+before you start deploying your applications.
+
+**Availability Zones:
+-----------------------
+What is an Availability Zone? It's 1 or more physically separated or isolated data centers.
+And it actually contains the servers that you're renting and it's where you provision your resources
+and deploy your applications.
+
+Let's look at the Ohio Region.Remember, this is in the US East geographic location.
+
+So within the Ohio Region,
+there are actually 3 Availability Zones: 2a, 2b, and 2c.
+
+And in Northern Virginia, there are actually 6 Availability Zones:
+us-east-1a through us-east-1f.
+
+Within the Northern Virginia Region there are 6 Availability Zones.
+Let's look at Availability Zone 1a in this Availability Zone, there are 2 data centers.
+Now, I have searched and searched
+
+in an Availability Zone.
+Let's look at 1b.1b actually has 4 data centers.
+1c maybe has 3, 1d 2, 1e 3, and 1f. So this just gives you an idea.
+
+Availability Zone has multiple data centers.
+the characteristics of Availability Zones.
+First, they're physically separated and they use different power grids.
+they're isolated.
+Now, they are connected among themselves within a single Region through low-latency links.
+AZs are fault tolerant.Like I said, if 1 AZ goes out of service,the others should not be impacted
+AZs allow for high availability.If you distribute your applications
+across multiple Availability Zones and 1 zone fails,your application should still run
+because it's running in another AZ.
+
+edge locations:
+-----------------
+What is an edge location? you can just look at this map and see that there are way more edge locations
+than Availability Zones and Regions.And you can think of an edge location like a mini data center,
+but it's not used to launch resources like EC2 instances.
+It's used to cache your content.And this is made possible through CloudFront.
+So edge locations actually reduce latency and speeds up the delivery of your applications.
+
+ what is latency?
+
+Latency is basically the amount of time it takes for your website to load.So it's the time that passes
+between a user request and the resulting response.Low latency is always a good thing
+because it means your website is loading faster.
+So whenever you hear the term high latency,just remember that is not a good thing,
+because that means it takes a long time for your website to load.
+
+
+Recap:
+-------
+a Region is a physical location in the world that contains Availability Zones.
+So think of a Region like a collection of Availability Zones,and you should set up resources in Regions
+closest to your users to improve the overall user experience.
+And don't forget,most resources are tied to a specific Region.
+
+Availability Zone, that's a collection of 1 or more data centers,and it contains the servers you're renting
+and it's where you deploy your applications.And an Availability Zone is associated with 1 single Region.
+So they don't span Regions.
+
+edge locations.
+is used to cache your content to speed up delivery.And this is made possible through Amazon CloudFront.
+And the whole point of an edge location is to reduce latency.And you can think of it like a mini data center,
+but it doesn't run your main infrastructure like EC2 instances.
+It mainly caches static content.
+
+Don't forget that Multi-AZ deployments provide high availability
+and systems that are highly available are dependable and they continuously operate without failure.
+
+And don't forget, an AZ has multiple data centers.It's a collection of data centers.
+
+And a Region is a global construct and it has 2 or more Availability Zones.
+And edge locations ensure low latency by placing content closer to your users.
+And don't forget, there are more edge locations than Regions and Availability Zones.
+

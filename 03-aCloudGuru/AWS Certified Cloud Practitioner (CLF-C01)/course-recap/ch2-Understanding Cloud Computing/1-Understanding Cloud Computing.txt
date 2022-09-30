@@ -1,0 +1,52 @@
+introduce you to cloud computing.
+
+Words like AI, big data, Internet of Things, 5G,and a lot of these terms don't make clear what they actually mean.The cloud is one of those terms.
+
+What do you think about when you hear the term, the cloud?
+ "You should migrate to the cloud,"or, "Your data is in the cloud," or, "You can work in the cloud."the cloud has nothing to do with white fluffy things
+far away, somewhere in the sky.
+
+When your data sets and applications live in the cloud,they're not somewhere in the wind.
+
+***The cloud is a real place. Your data is stored somewhere. the cloud can really be servers anywhere in your data center or someone else's.
+Servers are very powerful computers that handle your requests.
+
+So whenever you access a simple website or an app or a complex web application, maybe one that has online ordering, there is a server
+or many servers behind the scenes.
+
+Now AWS has thousands and thousands of servers grouped together in what's called a data center.
+
+When you use these servers, you can deliver your applications over the internet and that's essentially what cloud computing is.
+The delivery of computing services over the internet. Think of it as a different way of storing data and sharing applications.
+Instead of on your local machine or in your internal data center, you're using AWS' servers,
+and AWS provides many high-level services to help you access and share your data and applications with others.
+
+So you'll hear a category called compute. So there are compute services like EC2 and Lambda.
+
+There are networking services. like  VPC and Direct Connect. 
+
+Storage services-- like  S3 and EBS. 
+
+Analytic services, like Athena and Redshift.
+
+Development services-- like Cloud9 and CodeCommit.
+
+And security services, like IAM and Macie,
+
+and database services, like RDS and DynamoDB.
+
+
+To maximize the use of their servers,AWS allows you to share a single server with other AWS customers through virtualization.
+Now, virtualization is at the heart of cloud computing. Virtualization divides the hardware resources on 1 single physical server
+into smaller units called virtual machines.
+
+Each VM, or virtual machine, is its own little server complete with its own operating system, memory, storage,
+networking access, and you have this VM all to yourself.
+
+"Well, how do I use these VMs and how do I pay for them?"It's like your usage is placed on a meter.Think about a water meter or a gas meter
+or an electric meter,cloud providers like AWS operate just like power companies.It's such a novel idea. Now you have on-demand and pay as you go.
+When you pay only when you access the services and only for what you use.On-demand, you have no long-term commitments
+or upfront payments, and with pay as you go, you pay by the hour or sometimes down to the second for only what you use.
+
+Going into the exam, make sure you remember the categories for each service. For example, Lambda and EC2 are compute services.
+We'll learn more about all of the different services and categories later.

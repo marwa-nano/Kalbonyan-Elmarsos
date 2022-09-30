@@ -1,0 +1,45 @@
+cloud computing and deployment models.There are actually 3 different service models and you choose the model
+based on your business requirements.
+
+ AWS actually offers all 3 of these models.
+------------------------------------------------
+1-The first one is Infrastructure as a Service(Iaas).Think of this as the most basic fundamental building blocks that can be rented.
+So a service like Amazon Elastic Compute Cloud, or EC2.
+Think about it also in terms of web hosting where you pay a monthly subscription to have a hosting company serve up your website.
+
+The next is Software as a Service, or SaaS.This is a complete product that is run and managed by the service or software provider.
+So in AWS, think about a service like SageMaker,which is their machine learning service,and in the real world,
+think about your email provider.So your personal email that you access through a web browser,that's a SaaS product.
+
+And we have Platform as a Service.Now this is a cloud-based environment,typically used by developers
+to build and deliver applications without having to install anything.On AWS, think of a service like Cloud9,
+which is a developer service.In the real world,think about building a storefront website and a service provider giving you the tools to do that.
+
+there are 3 cloud deployment models
+---------------------------------------
+1-the first one is called a private cloud or on-premises.This is your company's internal data center
+and everything runs in your internal network,like your databases and your servers, etc.Now this deployment model
+doesn't offer any of the advantages of cloud computing
+that we just talked about,but there is an increased level of security and your infrastructure resources
+aren't shared with other organizations using that virtualization that we talked about.
+
+2-The next one is the public cloud.This is AWS.You aren't responsible for the physical hardware
+and you gain all of the advantages of cloud computing like increased agility, you benefit from massive economies of scale,
+no huge upfront investments, etc.
+
+3-we have the hybrid cloud.Now this is a combination of both private and public cloud
+and you may be thinking, "Why in the world "would anybody want to do that?"
+I've seen architectures--and this is a picture of it--where companies keep highly sensitive data in their own private data center,
+but the app that reads that data runs in AWS and they're able to talk to each other
+using a service provided by AWS called Direct Connect.
+
+3 models:
+1-Infrastructure as a Service.Remember that's the basic building blocks that you can rent, like an EC2 instance.
+2-Software as a Service.That is a complete product or application.
+3-Platform as a Service.These are tools typically used by developers to build applications.
+
+deployment:
+1-private cloud.that's your internal data center. It's also called on-premises.
+2-public cloud. That's AWS.
+3-hybrid cloud.That's a combination of private and public.And the architecture that we reviewed included keeping sensitive data in the private cloud.
+and the application reading that data in the public cloud,and the 2 talking to each other using Direct Connect.

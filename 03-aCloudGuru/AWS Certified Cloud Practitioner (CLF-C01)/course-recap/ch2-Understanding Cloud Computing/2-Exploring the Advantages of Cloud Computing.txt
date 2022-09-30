@@ -1,0 +1,56 @@
+the advantages of cloud computing.we learned cloud usage is on-demand and pay-as-you-go.Now, there are several benefits to this approach.
+Many companies either don't have the money or don't want to spend the money,time, and resources on building and maintaining their own data center.
+They just rent from AWS.And literally at the click of a button,they can stand up servers.
+
+1- So, the first benefit is you're able to go global in minutes.
+AWS has servers all over the world and you can easily deploy your applications to multiple regions at the click of a button.
+
+T2-he second is you stop spending money running and maintaining data centers.So you're able to focus on projects that differentiate your business,
+not the infrastructure like servers.You also benefit from massive economies of scale.
+AWS, they actually aggregate usage from hundreds of thousands of customers so they achieve higher economies of scale,
+and then they pass those volume discounts onto you,which gives you a lower pay-as-you-go price.
+
+Next, you have increased speed and agility,
+which essentially means a faster time to market.With cloud computing,you have new resources available at the click of a button.
+So, from weeks to now just minutes,and that allows you to innovate more quickly and deliver your applications faster.
+
+Next, you're able to stop guessing about capacity.
+Now in the past, companies ended up sitting on expensive idle resources or dealing with limited capacity.Now, your capacity is matched exactly to your demand.
+And you're able to trade capital expenses for variable expenses.
+So, what does that mean?
+Instead of having to invest heavily in data centers and servers upfront,before you know how you're going to use them,
+with the cloud, you pay for what you use instead of having to make those huge upfront investments.
+
+So now, Alfredo can focus on coming up with new, innovative recipe ideas or building an app to sell his pizza online.
+And when he's building that app, he'll have low upfront cost and the ability to reach customers around the world at the click of a button,
+instead of having to maintain servers or hiring people to do it.
+
+Let's put the benefits of cloud computing into technical terms
+-----------------------------------------------------------------
+1-The first term is high availability.A highly available system is one that operates continuously without failure.Meaning it's always up and running.
+And when you design a system that's highly available, you design it to avoid loss of service by reducing and managing failures.
+
+2-The next term you'll hear is elasticity.Now, when you hear this term,think about growing and shrinking like a rubber band
+or pizza dough as it stretches. It's related to capacity.
+For example, you provision servers and provision just simply means to set up,or create, or deploy.You provision servers
+or you take away servers based on demand.You don't have to plan ahead of time how much capacity you'll need.
+And as you're learning AWS,you'll hear a lot of services have the word elastic in their name.
+
+3-Next,there is a term called agility.You'll hear that the cloud gives you increased agility.Well, AWS, they have a ton of services
+that help you innovate faster and gives you a faster speed to market.
+
+4-Durability is all about data and data protection.
+Will your data be there tomorrow? Or will it be corrupted, missing, or in an unusable state? AWS actually guarantees durability.
+
+Capital expenditures, CapEx, vs. operating expenses,  OpEx,have different implications for cost control.
+ capital expenditures, or CapEx,  are upfront purchases toward fixed assets.So things like equipment, property, computers, and software
+are all considered capital expenditures.
+
+operating expenses are funds used to run day-to-day operations.So, things like research and development,employee salaries, rent, and marketing.
+
+make sure you understand the 6 advantages of cloud computing
+high availability,
+elasticity,
+agility,
+and durability.
+

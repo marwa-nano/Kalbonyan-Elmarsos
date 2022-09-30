@@ -1,0 +1,84 @@
+"Exploring Your AWS Account."
+In AWS Management Console,which is the most popular way to provision and view resources in your AWS account.
+
+the AWS Management Console is the number one most popular way to interact with your AWS resources.
+It supplies an intuitive user interface that allows you to navigate to various services and provision resources in the AWS cloud.
+
+If you're new to cloud or experimenting with a new service, the AWS Management Console might be the place to start.
+The AWS console is also great for non-technical roles. If you just want visibility on the AWS resources
+that exist in an AWS account, you'll probably be doing so through the Management Console.
+And technical roles--If you're building things in the AWS cloud,there's a good chance you're doing it through the Management Console.
+
+the root user.:
+Your AWS account can have many users.You can invite other people to come and collaborate on work in a single AWS account.
+But there is also one user to rule them all.The email that you use to initially create your AWS account will be associated with your root user.
+This is the user that brought the AWS account into existence, and it's also the only userthat can completely delete the AWS account,
+including all the resources that you've provisioned.
+For that reason, it's very important to keep the root user secure.
+It's best not to use the root user for day-to-day tasks in your AWS account, and it's highly suggested you protect your root user
+with multi-factor authentication, which you can do from the IAM service.
+
+AWS Console
+You can see your most recently visited AWS services, as well as some Getting Started information.
+The newest Console Home allows you to add and remove widgets, so you can put whatever you find the most useful
+on your Console Home.If you wanted to explore all the services that AWS has to offer,
+you can click in the upper left-hand here on the Services button.This opens up a huge menu containing
+all the different categories of services AWS provides.
+
+So if I were to click Compute here, you can see services like EC2, Lambda, and Lightsail.
+
+you can use the search bar at the top to find a particular service I'm looking for.
+In this case, I'll go to the service IAM, or Identity and Access Management.in there I have one major security recommendation,
+and that's to add MFA for the root user. Because I'm not logged in as the root user,I can't take this action,
+but I can alert my administrator and let them know that MFA should be added.This is also where you could add additional IAM users
+to your AWS account.
+
+if you wanted to navigate back to that main Console page, you would do so by clicking on the AWS icon
+in the upper left-hand corner.So here, we can see our familiar Console Home with the widgets we've chosen.
+Now, there is one more thing I wanted to show you
+
+I'm going to search for the service, VPC, and I'll click here to go to VPC.One thing that will already be provisioned
+in your AWS account will be a default VPC. This will include a VPC, 6 subnets,some route tables, and an internet gateway.
+Now, don't worry, we're going to cover all of these things these things are provisioned by default.
+When provisioning EC2 instances or other services that require a VPC,they will tend to default to this VPC
+unless you create a separate one.
+Another important note that can be a sticking point
+for many people who are new to AWS is understanding Regions.When you're looking at your resources in the console,it's important to understand which Region you're operating in.
+As you can see, I'm currently operating in the North Virginia Region, or us-east-1.
+When I'm in us-east-1, only those resources I've provisioned in this Region will be visible to me.
+If I wanted resources in multiple Regions,I'd have to navigate to that other Region,and then create resources there.
+As you can see, there's also a default VPC in this Region,but it is a separate VPC.Now, I'm going to navigate back to us-east-1,
+because that's where I want my resources to exist. That's the AWS Management Console.
+
+the AWS Command Line Interface, or CLI:
+This is another way to interact with your AWS resources, just like the console.
+However, the big difference here is that you're sending commands which trigger APIs through your terminal.
+For the most part, the CLI has all of the same features that exist in the AWS Management Console,
+but sometimes, new features are available in the CLI before they develop the user interface in the console.
+The CLI is also typically used by developers or other technical resources.
+The CLI gives you something called programmatic access,meaning you can use code to define actions that take place in your AWS account.
+You can also achieve this in another way.
+Of course, there's the Command Line Interface,which allows you to manage AWS services from a terminal by sending commands,
+but you can also make changes in your AWS account
+in your application code by leveraging SDKs, or Software Development Kits.
+Software Development Kits are packages that you can include in your applications' code base that allows them to make changes to your actual AWS account and the services within.
+This is very powerful and requires pretty advanced technical knowledge.
+For the purposes of this course,
+you just need to understand that you can gain
+programmatic access to your AWS resources through the CLI or Software Development Kits.
+
+Recap:
+----- 
+The root user is automatically created when you open your account.You should always activate multi-factor authentication,and typically,
+ you shouldn't use the root user for day-to-day operations.
+
+The console is one way for you to access resources in your account.It's a visual point-and-click interface that makes provisioning AWS resources
+really easy and accessible.
+
+And the CLI... The CLI is one form of programmatic access that gives you powerful and fast control over the AWS resources in your account.
+
+
+It's very important to understand what a root user is and how it's different from a typical user.You can add many, many users to your AWS account,
+but there will always only be one root user. The root user has unlimited power to change your account settings,or even delete your account altogether.
+
+It's also important to understand the CLI as an alternative to the Management Console.

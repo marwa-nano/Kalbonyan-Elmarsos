@@ -1,0 +1,7 @@
+Amazon WorkSpaces
+Secure, reliable, and scalable access to persistent desktops from any location
+
+How it works
+Amazon WorkSpaces is a fully managed desktop virtualization service for Windows and Linux that enables you to access resources from any supported device.
+
+https://aws.amazon.com/workspaces/
