@@ -1,0 +1,21 @@
+{
+  "name": "02-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js -e js,hbs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "hbs": "^4.0.1",
+    "postman-request": "^2.88.1-postman.31"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
