@@ -1,0 +1,39 @@
+Let's explore the exam blueprint.Let's take a closer look at the exam blueprint.
+The AWS Certified Cloud Practitioner exam is intended for people who can demonstrate basic knowledge
+of the AWS platform, the available services,their common use cases, architecture design principles,
+account security, governance, and compliance.It validates your ability to explain the value
+of the AWS Cloud.
+So when we talk about the value,we mean the benefits and the advantages.
+You also have to understand and explain the AWS shared responsibility model.
+There is a shared security responsibility model between you and AWS.
+You also have to understand security best practices,specifically IAM, or Identity and Access Management
+security best practices.
+You have to understand AWS Cloud costs
+and billing practices,like how services like EC2 and Lambda are billed.
+And you have to describe the core AWS services that fall under the compute, networking,
+databases, and storage categories. And you also have to identify common use cases.
+
+you've watched the "Introduction to AWS" course,
+and you complete this course along with
+all of the hands-on labs, quizzes, and practice exam.
+
+There are actually 4 domain areas.
+The first domain area is Cloud Concepts.
+1-Cloud Concepts covers the AWS Cloud value proposition,cloud economics, and cloud architecture design principles.
+And that sits right at 26%.So 26% of the questions will come from this category.
+
+2-Next, we have the Technology category,
+and this covers methods of deployments and operations,the global infrastructure,AWS services, and technology support.
+And that sits right at 33%.
+
+3-Next, we have Security and Compliance.Security and Compliance defines
+the shared responsibility model,security, compliance concepts,and access management capabilities. And that sits right at 25%.
+
+4-Next, we have Billing and Pricing.This covers comparing pricing models, account structures,
+billing, pricing, and billing support resources.And that sits right at 16%.
+
+As it stands today, a minimum passing score is 700,
+which is like a 70 or a C,
+but we're aiming for much higher than that
+for students taking this course.
+

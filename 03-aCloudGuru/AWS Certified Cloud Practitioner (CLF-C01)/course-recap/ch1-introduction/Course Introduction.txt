@@ -1,0 +1,12 @@
+ Welcome to the AWSCertified Cloud Practitioner course.learning the basic principles of AWS and cloud technology.
+
+This course has four main sections:
+
+1- Cloud Computing Fundamentals
+
+2-Technology Tools and Services, 
+
+3-Security and Compliance,
+
+4- finally, Billing and Pricing.
+
