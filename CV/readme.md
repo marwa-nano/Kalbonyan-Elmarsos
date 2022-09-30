@@ -1,2 +1,2 @@
 # CV
-![2022-09-30-07-27-](https://user-images.githubusercontent.com/61974319/193196832-2d161574-8fbb-42a1-bd15-72c1742bcabc.png)
+![2022-09-30-22-21-](https://user-images.githubusercontent.com/61974319/193350484-29c89e88-4e95-4c95-b4c5-224f2a355e6e.png)
